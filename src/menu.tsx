@@ -470,7 +470,7 @@ export default function MenuPage() {
         >
           <div className="full-menu-block__intro full-menu-block__intro--photo full-menu-block__intro--drinks">
             <img
-              src="assets/Drinks.jpg"
+              src={`${import.meta.env.BASE_URL}assets/Drinks.jpg`}
               alt=""
             />
 

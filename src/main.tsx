@@ -41,7 +41,7 @@ const images = [
     caption: 'From the kitchen',
   },
   {
-    src: 'assets/1.jpg',
+    src: `${import.meta.env.BASE_URL}assets/1.jpg`,
     alt: 'Pasta dish served at a restaurant',
     caption: 'Dinner plates',
   },
@@ -61,12 +61,12 @@ const images = [
     caption: 'menu',
   },
   {
-    src: 'assets/3.png',
+    src: `${import.meta.env.BASE_URL}assets/3.png`,
     alt: '3',
     caption: 'interior',
   },
   {
-    src: 'assets/ssa.jpg',
+    src: `${import.meta.env.BASE_URL}assets/ssa.jpg`,
     alt: '3',
     caption: 'Seasonal Spring AVO',
   },
@@ -385,7 +385,7 @@ function App() {
             viewport={{ once: true }}
           >
             <img
-              src="assets/goodfood.jpg"
+              src={`${import.meta.env.BASE_URL}assets/goodfood.jpg`}
               alt="Coffee served in a warm cafe setting"
               loading="lazy"
             />
@@ -416,13 +416,13 @@ function App() {
                 '01',
                 'COFFEE',
                 'Thoughtfully prepared coffee and café favourites.',
-                'assets/coffee.jpg',
+                `${import.meta.env.BASE_URL}assets/coffee.jpg`,
               ],
               [
                 '02',
                 'FOOD',
                 'Comforting dishes with modern flavour and presentation.',
-                'assets/food.jpg',
+                `${import.meta.env.BASE_URL}assets/food.jpg`,
               ],
               [
                 '03',
